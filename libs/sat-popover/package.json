@@ -1,0 +1,29 @@
+{
+  "name": "@hickorytechnology/sat-popover",
+  "version": "0.0.1",
+  "description": "Popover component for Angular",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hickorytechnology/sat-popover.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "Josh Sullivan",
+    "email": "josh@hickorytechnology.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hickorytechnology/sat-popover/issues"
+  },
+  "homepage": "https://github.com/hickorytechnology/sat-popover#readme",
+  "peerDependencies": {
+    "@angular/common": "12 - 14",
+    "@angular/core": "12 - 14",
+    "@angular/cdk": "12 - 14"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/sat-popover/src",
+  "prefix": "sat",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": [
+        "dist/libs/sat-popover"
+      ],
+      "options": {
+        "project": "libs/sat-popover/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/sat-popover/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/sat-popover/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/sat-popover"
+      ],
+      "options": {
+        "jestConfig": "libs/sat-popover/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/sat-popover/**/*.ts",
+          "libs/sat-popover/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
